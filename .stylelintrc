@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-suitcss",
+  "defaultSeverity": "warning",
+  "rules": {
+    "max-empty-lines": 2,
+    "selector-list-comma-newline-after": "never-multi-line"
+  }
+}

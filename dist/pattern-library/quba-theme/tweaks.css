@@ -1,0 +1,113 @@
+.Header {
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #D3D3D3;
+    box-shadow: none;
+    padding: 24px 32px;
+    display: block;
+}
+
+a.Header-title:link {
+    padding: 0;
+    font-size: 14px;
+    color: #1D1D1B;
+}
+
+.Frame-panel--sidebar {
+    padding: 0;
+    border-right: none !important;
+    background-color: #F2F2F2;
+    width: 320px !important;
+}
+
+.Navigation {
+    margin-top: 48px;
+}
+
+.Tree-title {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #B5C2C2;
+    margin: 16px 0 16px 32px;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: .4s color;
+}
+
+.Tree-title:before {
+    content: '';
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background-color: #B5C3C3;
+    left: 32px;
+    /* top: 0; */
+    margin-top: -8px;
+    border-radius: 50%;
+    transition: .4s background-color;
+}
+
+.Tree-title.is-active:before, .Tree-title:hover:before {
+    background-color: #676974;
+}
+
+.Tree-title:hover, .Tree-title.is-active {
+    color: #676974;
+}
+
+[dir="ltr"] .Tree-title {
+    padding-left: 60px;
+}
+
+.Tree-depth-1.is-closed {
+    display: none;
+}
+
+.arrow {
+    border: solid #B5C2C2;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    float: right;
+    margin-top: 10px;
+    transition: border .4s;
+}
+
+.Tree-title:hover .arrow {
+    border: solid #676974;
+    border-width: 0 3px 3px 0;
+}
+
+.Tree-title.is-active .arrow.down {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-top: 13px;
+    border: solid #676974;
+    border-width: 0 3px 3px 0;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.Tree-entityLink {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 90px;
+}
+
+[dir="ltr"] .Tree-depth-1 .Tree-entityLink {
+    padding-left: 90px;
+}
+
+.Tree-entityLink:hover {
+    background-color: #E9E9E9;
+}
+
+.Tree-entityLink span {
+    color: #8F919C;
+}
+
+.is-current .Tree-entityLink, .is-current .Tree-entityLink span {
+    background-color: #676974;
+    color: white;
+}
