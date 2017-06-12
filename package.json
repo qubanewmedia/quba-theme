@@ -43,7 +43,7 @@
     "postcss-bem-linter": "^2.7.0",
     "postcss-reporter": "^3.0.0",
     "postcss-scss": "^0.4.1",
-    "quba-theme": "^1.0.0",
+    "quba-theme": "^1.1.0",
     "sass-mq": "^3.3.2",
     "stylelint": "^7.9.0",
     "stylelint-config-suitcss": "^10.0.0",
