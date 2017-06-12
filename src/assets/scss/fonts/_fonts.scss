@@ -1,0 +1,67 @@
+/*
+	If possible, use a web font and import it in the <head>.
+	http://stackoverflow.com/a/12380004/1864403
+
+	Otherwise, place your .woff font files in /public/fonts/ and use the code below.
+	It's not recommended to use font files unless you have them in .woff format
+	http://stackoverflow.com/a/22738998/1864403
+*/
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/calibre/calibre-regular.woff')format('woff');
+  src: url('../fonts/calibre/Calibre-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/calibre/calibre-medium.woff')format('woff');
+  src: url('../fonts/calibre/Calibre-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/calibre/calibre-semibold.woff')format('woff');
+  src: url('../fonts/calibre/Calibre-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/calibre/Calibre-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('../fonts/georgia/Georgia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('../fonts/georgia/Georgia Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('../fonts/georgia/Georgia Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('../fonts/georgia/Georgia Bold Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}

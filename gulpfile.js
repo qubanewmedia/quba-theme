@@ -79,8 +79,8 @@ gulp.task('images', () => {
 
 // Transfer fonts from src to dist
 gulp.task('fonts', () => {
-  gulp.src(['./src/assets/fonts/*.{woff,woff2}'])
-  .pipe(gulp.dest('./dist/_assets/fonts'))
+  gulp.src(['./src/assets/fonts/**/*.{woff,woff2,otf,ttf}'])
+  .pipe(gulp.dest('./dist/assets/fonts'))
   .pipe(browserSync.stream());
 });
 
